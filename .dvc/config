@@ -1,0 +1,4 @@
+[core]
+    remote = ashish_gdrive
+['remote "ashish_gdrive"']
+    url = gdrive://m8JHrodtqlAwwfPK0pQOls8FXv

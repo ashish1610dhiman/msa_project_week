@@ -1,4 +1,5 @@
 [core]
-    remote = ashish_gdrive
-['remote "ashish_gdrive"']
-    url = gdrive://m8JHrodtqlAwwfPK0pQOls8FXv
+    remote = ad_gdrive
+['remote "ad_gdrive"']
+    url = gdrive://1DDI_5-m8JHrodtqlAwwfPK0pQOls8FXv
+    gdrive_acknowledge_abuse = true

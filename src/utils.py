@@ -52,7 +52,7 @@ def plot_pred_sku(train,y_act,y_pred, sku_id, start_dt = "2022-07-01", ax1 = Non
     y_pred_sku = y_pred[y_pred.Encoded_SKU_ID==sku_id]
     df_join = train_valid_sku.merge(y_pred_sku,on=["SALES_DATE"], how ="outer")
     df_join_subset = df_join[df_join.SALES_DATE>=start_dt]
-    df_join_subset.plot(ax = ax1,x="SALES_DATE",y=["actual","predicted"],color=["black","r"])
+    df_join_subset.plot(ax = ax1,x="SALES_DATE",y=["actual","predicted"],color=["black","r"], alpha = 0.5)
     if ax1:
         ad_plot = ax1
         ad_plot.title.set_text(

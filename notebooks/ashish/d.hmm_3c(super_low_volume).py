@@ -120,7 +120,6 @@ from IPython.utils import io
 def parallel_hmm_function(sku_id):
     n_comps = sku_in_scope[sku_id]
     sku_pred_model = sku_predict(train_test, sku_id)
-    print(f"predicting for {sku_id}")
     try:
         with io.capture_output() as captured:
             feats_sku = sku_pred_model.get_features(n_lags=2)
@@ -144,6 +143,7 @@ def parallel_hmm_function(sku_id):
         merge4 = merge3.merge(sku_pred_max[["predicted"]], left_index=True, \
                               right_index=True, suffixes=("", "_max"))
         merge4["Encoded_SKU_ID"] = [sku_id] * merge4.shape[0]
+        print(f"prediction succesful for {sku_id}")
         return(merge4)
     except:
         print(f"Error for {sku_id}")

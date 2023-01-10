@@ -85,5 +85,5 @@ class sku_predict():
             # print(most_probable_outcome)
         predict_df["predicted1"] = predict_df["DAILY_UNITS_lag1"] + (predict_df["change_lag1"])
         predict_df["predicted2"] = predict_df["DAILY_UNITS_lag2"] + (predict_df["change_lag2"])
-        predict_df["predicted"] = (0.5*predict_df["predicted1"] + 0.5*predict_df["predicted2"])
+        predict_df["predicted"] = (0.55*predict_df["predicted1"] + 0.45*predict_df["predicted2"])
         return predict_df

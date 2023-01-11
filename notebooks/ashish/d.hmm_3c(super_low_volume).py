@@ -143,7 +143,7 @@ def parallel_hmm_function(sku_id):
         merge4 = merge3.merge(sku_pred_max[["predicted"]], left_index=True, \
                               right_index=True, suffixes=("", "_max"))
         merge4["Encoded_SKU_ID"] = [sku_id] * merge4.shape[0]
-        print(f"prediction succesful for {sku_id}")
+        print(f"prediction successful for {sku_id}")
         return(merge4)
     except:
         print(f"Error for {sku_id}")

@@ -46,3 +46,8 @@ As listed in the folder structure above, these are the main codes and their desc
 - notebooks/ashish/validation_train/b.run_hmm_final1.ipynb: The code is used to implement and train HMM models. It calls upon the ad_hmm.py module in the src folder.
 - notebooks/ashish/validation_train/c.run_stl_prophet_new.ipynb: The code is used to implement and train Prophet/ STL/MSTL models. It calls upon the run_stl_prophet_new.py module in the src folder.
 - notebooks/yibei/c.HW_final.ipynb: The code is used to implement and train Holt Winters Exp smoothing and the Null model.
+
+### Random nuances:
+- Statmodels beta realease has been used
+- Joblib is used
+- some codes are run on kaggle, to prevent personal laptop use

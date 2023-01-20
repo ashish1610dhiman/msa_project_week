@@ -1,4 +1,5 @@
 ## Forecasting of slow moving SKUs
+https://github.com/ashish1610dhiman/bestbuy
 
 Random Samplers
 - Ashish Dhiman

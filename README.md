@@ -31,8 +31,8 @@ bestbuy
 │   │    │   c.run_stl_prophet_new.ipynb #Train and forecast from Prophet/ STL/MSTL
 │   │    │   ...
 │   │    
-│   └───yibei/ Test notebooks by Ashish | HMM/STL/Prophet
-│        │   file111.txt
+│   └───yibei/ Test notebooks by Yibei | HMM/STL/Prophet
+│        │   HW_final.ipynb #Notebook to train Holt Winters Exp smoothing and Null model
 │        │   ...
 │    
 │
@@ -45,5 +45,4 @@ bestbuy
 As listed in the folder structure above, these are the main codes and their description:
 - notebooks/ashish/validation_train/b.run_hmm_final1.ipynb: The code is used to implement and train HMM models. It calls upon the ad_hmm.py module in the src folder.
 - notebooks/ashish/validation_train/c.run_stl_prophet_new.ipynb: The code is used to implement and train Prophet/ STL/MSTL models. It calls upon the run_stl_prophet_new.py module in the src folder.
-
-Packages list 
+- notebooks/yibei/c.HW_final.ipynb: The code is used to implement and train Holt Winters Exp smoothing and the Null model.
